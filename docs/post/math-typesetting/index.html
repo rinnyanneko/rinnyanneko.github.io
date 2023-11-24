@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta name="generator" content="Hugo 0.120.4">
     <title>Rin&#39;s Site</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
@@ -30,103 +29,32 @@
 
 <div class="row-fluid navmargin">
     <div class="page-header">
-        <h1></h1>
+        <h1>Math Typesetting - Fri, Mar 8, 2019</h1>
     </div>
-</div>
+    <p class="lead">A brief guide to setup KaTeX</p>
+    <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
+<li>Include the partial in your templates like so:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span> <span style="color:#66d9ef">if</span> or .Params.math .Site.Params.math <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span> partial <span style="color:#e6db74">&#34;math.html&#34;</span> . <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span> end <span style="color:#f92672">}}</span>
+</span></span></code></pre></div><ul>
+<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
+<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
+</ul>
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a></p>
 
-<div class="row-fluid">
-    <div class="span9 bs-docs-sidebar">
-        <p class="lead"></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <hr class="soften">
-        <p></p>
-        <h1>Blog posts</h1>
-        <ul>
-            
-            
-            <li><a href="https://rinnyanneko.github.io/post/helloworld/">2023-11-24 | Helloworld</a></li>
-            
-            
-            
-            
-            
-            <li><a href="https://rinnyanneko.github.io/post/markdown-syntax/">2019-03-11 | Markdown Syntax Guide</a></li>
-            
-            
-            
-            <li><a href="https://rinnyanneko.github.io/post/rich-content/">2019-03-10 | Rich Content</a></li>
-            
-            
-            
-            <li><a href="https://rinnyanneko.github.io/post/placeholder-text/">2019-03-09 | Placeholder Text</a></li>
-            
-            
-            
-            <li><a href="https://rinnyanneko.github.io/post/math-typesetting/">2019-03-08 | Math Typesetting</a></li>
-            
-            
-            
-            <li><a href="https://rinnyanneko.github.io/post/emoji-support/">2019-03-05 | Emoji Support</a></li>
-            
-            
-            
-            
-        </ul>
-    </div>
+<h3 id="examples">Examples</h3>
 
-    <div class="span3 bs-docs-sidebar">
-        <h1>Categories</h1>
-        <ul class="nav nav-list bs-docs-sidenav">
-            
-<li>
-    <a href="https://rinnyanneko.github.io/categories/syntax/">syntax</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/categories/themes/">themes</a>
-</li>
-
-        </ul>
-        <p></p>
-        <h1>Tags</h1>
-        <ul class="nav nav-list bs-docs-sidenav">
-            
-<li>
-    <a href="https://rinnyanneko.github.io/tags/css/">css</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/tags/html/">html</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/tags/markdown/">markdown</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/tags/privacy/">privacy</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/tags/shortcodes/">shortcodes</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/tags/text/">text</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/tags/emoji/">emoji</a>
-</li>
-
-<li>
-    <a href="https://rinnyanneko.github.io/tags/index/">index</a>
-</li>
-
-        </ul>
-    </div>
+<p>Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$</p>
+    <h4><a href="https://rinnyanneko.github.io/">Back to Home</a></h4>
 </div>
 
 
