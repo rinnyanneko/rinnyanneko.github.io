@@ -1,2 +1,0 @@
-# rinnyanneko.github.io
-Website!

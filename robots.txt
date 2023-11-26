@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rinnyanneko.github.io/sitemap.xml
