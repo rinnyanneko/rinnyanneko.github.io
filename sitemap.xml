@@ -3,6 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://rinnyanneko.github.io/files/</loc>
+    <lastmod>2024-01-26T10:31:49+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rinnyanneko.github.io/files/eng_read_jianggao/</loc>
+    <lastmod>2024-01-26T10:31:49+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rinnyanneko.github.io/files/jianggao/</loc>
+    <lastmod>2024-01-26T10:31:42+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rinnyanneko.github.io/files/eng_read/</loc>
+    <lastmod>2024-01-26T10:31:32+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://rinnyanneko.github.io/posts/schoolworldtw/</loc>
     <lastmod>2023-11-30T19:33:26+08:00</lastmod>
     <changefreq>daily</changefreq>
