@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://rinnyanneko.github.io/school_hw/</loc>
+    <lastmod>2024-07-11T16:53:14+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rinnyanneko.github.io/school_hw/2024summer/physics/</loc>
+    <lastmod>2024-07-11T16:53:14+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://rinnyanneko.github.io/files/</loc>
     <lastmod>2024-01-26T10:31:49+08:00</lastmod>
     <changefreq>daily</changefreq>
