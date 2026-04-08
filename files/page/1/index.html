@@ -1,10 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>https://rinnyanneko.github.io/files/</title>
-    <link rel="canonical" href="https://rinnyanneko.github.io/files/">
-    <meta name="robots" content="noindex">
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=https://rinnyanneko.github.io/files/">
-  </head>
+<!doctype html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="refresh" content="5;url=https://mirukuneko.cc" />
+        <title>網站已搬遷 | Miruku Neko</title>
+        <style>
+            /* 模擬 Blowfish 主題的 Tailwind CSS 現代暗色風格 */
+            :root {
+                --bg-color: #171717; /* 中性深灰背景 */
+                --card-bg: #262626; /* 卡片背景 */
+                --text-main: #f5f5f5; /* 主要文字顏色 */
+                --text-muted: #a3a3a3; /* 次要文字顏色 */
+                --accent: #3b82f6; /* Blowfish 常見的藍色主視覺 */
+                --accent-hover: #2563eb;
+                --code-bg: rgba(255, 255, 255, 0.1);
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family:
+                    ui-sans-serif,
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    "Helvetica Neue",
+                    Arial,
+                    sans-serif;
+                background-color: var(--bg-color);
+                color: var(--text-main);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                text-align: center;
+            }
+
+            .container {
+                background-color: var(--card-bg);
+                padding: 3rem 2.5rem;
+                border-radius: 1rem;
+                box-shadow:
+                    0 10px 15px -3px rgba(0, 0, 0, 0.3),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.15);
+                max-width: 28rem;
+                width: 85%;
+                border: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            h1 {
+                font-size: 1.75rem;
+                font-weight: 700;
+                margin-top: 0;
+                margin-bottom: 1.25rem;
+                letter-spacing: 0.025em;
+            }
+
+            p {
+                color: var(--text-muted);
+                line-height: 1.7;
+                margin-bottom: 1.5rem;
+                font-size: 1rem;
+            }
+
+            .url-box {
+                display: inline-block;
+                font-family:
+                    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                    monospace;
+                background-color: var(--code-bg);
+                padding: 0.25rem 0.75rem;
+                border-radius: 0.375rem;
+                color: var(--text-main);
+                font-size: 0.9rem;
+                margin: 0.5rem 0;
+                word-break: break-all;
+            }
+
+            .btn {
+                display: inline-block;
+                background-color: var(--accent);
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0.75rem 1.5rem;
+                border-radius: 0.5rem;
+                font-weight: 600;
+                transition:
+                    background-color 0.2s ease,
+                    transform 0.1s ease;
+                margin-top: 0.5rem;
+            }
+
+            .btn:hover {
+                background-color: var(--accent-hover);
+            }
+
+            .btn:active {
+                transform: scale(0.97);
+            }
+
+            .footer-text {
+                font-size: 0.875rem;
+                margin-top: 2rem;
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            /* 讀取中的小動畫圈圈 */
+            .loader {
+                width: 16px;
+                height: 16px;
+                border: 2px solid var(--text-muted);
+                border-bottom-color: transparent;
+                border-radius: 50%;
+                display: inline-block;
+                box-sizing: border-box;
+                animation: rotation 1s linear infinite;
+            }
+
+            @keyframes rotation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>🚀 網站已搬遷</h1>
+
+            <p>
+                感謝您的訪問！本網站已經從 <br />
+                <span class="url-box">rinnyanneko.github.io</span> <br />
+                正式搬遷至全新的專屬網域。
+            </p>
+
+            <p>
+                請更新您的書籤至新網址：<br />
+                <span class="url-box">https://mirukuneko.cc</span>
+            </p>
+
+            <a href="https://mirukuneko.cc" class="btn">立即前往新網站</a>
+
+            <p class="footer-text">
+                <span class="loader"></span>
+                網頁將在
+                <span
+                    id="countdown"
+                    style="color: var(--text-main); font-weight: bold"
+                    >5</span
+                >
+                秒後自動跳轉...
+            </p>
+        </div>
+
+        <script>
+            let timeLeft = 5;
+            const countdownEl = document.getElementById("countdown");
+
+            const timer = setInterval(() => {
+                timeLeft--;
+                countdownEl.textContent = timeLeft;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    window.location.replace("https://mirukuneko.cc");
+                }
+            }, 1000);
+        </script>
+    </body>
 </html>
